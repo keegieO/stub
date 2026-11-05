@@ -1,0 +1,23 @@
+@font-face { font-family: 'Plex Mono'; src: url('fonts/plex-mono-600.woff2') format('woff2'); font-weight: 600; }
+@font-face { font-family: 'Plex Mono'; src: url('fonts/plex-mono-400.woff2') format('woff2'); font-weight: 400; }
+@font-face { font-family: 'Plex Sans'; src: url('fonts/plex-sans-400.woff2') format('woff2'); font-weight: 400; }
+@font-face { font-family: 'Plex Sans'; src: url('fonts/plex-sans-600.woff2') format('woff2'); font-weight: 600; }
+:root { --ink: #161616; --muted: #5E5E5E; --red: #A82A18; --desk: #E9E9E6; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--desk); color: var(--ink); font-family: 'Plex Sans', system-ui, sans-serif; font-size: 17px; line-height: 1.65; }
+main { max-width: 760px; margin: 40px auto 64px; background: #fff; padding: 48px 56px; }
+@media (max-width: 640px) { main { margin: 0; padding: 32px 20px; } }
+.top { display: flex; justify-content: space-between; align-items: baseline; font-family: 'Plex Mono', monospace; font-size: 13px; letter-spacing: .14em; border-bottom: 1px dashed var(--ink); padding-bottom: 16px; margin-bottom: 28px; }
+.top a { font-weight: 600; letter-spacing: .24em; text-decoration: none; color: var(--ink); }
+.top nav a { font-weight: 400; letter-spacing: .1em; margin-left: 16px; color: var(--muted); }
+h1 { font-size: 38px; line-height: 1.15; margin: 0 0 8px; letter-spacing: -.01em; }
+h2 { font-family: 'Plex Mono', monospace; font-size: 14px; letter-spacing: .12em; text-transform: uppercase; margin: 36px 0 8px; }
+.meta { font-family: 'Plex Mono', monospace; font-size: 13px; color: var(--muted); margin: 0 0 24px; }
+.summary { border: 1px solid var(--ink); padding: 18px 22px; margin: 24px 0; }
+.summary p { margin: 0; }
+a { color: var(--ink); text-underline-offset: 3px; }
+a:hover { color: var(--red); }
+li { margin-bottom: 6px; }
+footer { font-family: 'Plex Mono', monospace; font-size: 12px; color: var(--muted); border-top: 1px dashed var(--ink); margin-top: 40px; padding-top: 16px; }
+.cta { display: inline-block; background: var(--ink); color: #fff; text-decoration: none; font-family: 'Plex Mono', monospace; font-weight: 600; font-size: 14px; letter-spacing: .12em; padding: 12px 20px; margin: 8px 0 4px; }
+.cta:hover { background: #2E2E2E; color: #fff; }
