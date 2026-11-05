@@ -1,0 +1,2 @@
+# Stub
+stubs for amazon
